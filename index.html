@@ -34,6 +34,7 @@
                 <span class="ll">L</span>
                 <span class="ii">I</span>
                 <span class="o3">O</span>
+                <span class="o3">O</span>
                 </p>
             </a>
         </div>
@@ -121,16 +122,19 @@
                     <form>
                         <label for="fname">Name *</label> 
                         <br>
-                        <input type="text" id="fname" size="24" name="firstname" placeholder="Your first name..">
-                        <label for="lname"></label> <input type="text" size="23" id="lname" name="lastname" placeholder="Your last name..">
+                        <input class="erase" type="text" id="fname" size="24" name="firstname" placeholder="Your first name..">
+                        <br>
+                        <label for="lname">Last Name *</label>
+                        <br>
+                        <input class="erase" type="text" size="23" id="lname" name="lastname" placeholder="Your last name..">
                         <br>
                         <label for="email">Email Address *</label>
                         <br>
-                        <input type="email" id="email" size="50" name="email" placeholder="Your email id..">
+                        <input class="erase" type="email" id="email" size="50" name="email" placeholder="Your email id..">
                         <br>
                         <label for="phone">Contact Number *</label> 
                         <br>
-                        <input type="tel" id="phone" name="phone" placeholder="07592-255943" pattern="[0-9]{5}-[0-9]{5}" required>
+                        <input class="erase" type="tel" id="phone" name="phone" placeholder="07592-255943" pattern="[0-9]{5}-[0-9]{5}" required>
                         <br>
 
                         <p>Gender * 
@@ -138,7 +142,7 @@
                             <label for="male">Male</label> <input type="radio" id="male" name="gender" value="male">
                             <label for="female">Female</label> <input type="radio" id="female" name="gender" value="female">
                         </p>
-                        <button>Send &nbsp; ></button>
+                        <button onclick="send()">Send &nbsp; ></button>
                     </form>
                 </div>
             </div>
